@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title">
+                <img src="./icons/images.jpeg" alt="">
+                <h1 > GROUP CHAT</h1>
+            </div>
+            
+        </header>
+   
+
+    <div class="container">
+        <div class="user-window">
+            <div class="user-head">
+                <h3>People</h3>
+                <h4 class="users-count">3</h4>
+            </div>
+            <div class="users-list">
+               
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chats">
+                <!-- <div class="user-join">
+                    <p><b>Jarvis</b> joined the chat</p>
+                </div>
+                <div class="message incoming">
+                    <h5>Jarvis</h5>
+                    <p>Hello Ultron</p>
+                </div>
+                <div class="message outgoing">
+                    <h5>Ver</h5>
+                    <p>welcome Jarvis</p>
+                </div> -->
+            </div>
+
+            <div class="user-input">
+                <input id="user-msg" type="text" placeholder="type your mess
+                 ___">
+                 <button type="button" id="user-send">SEND</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    var window = document.querySelector('.user-window');
+    function show_hide(){
+        if(window.style.display == "none"){
+            window.style.display = "block";
+        }
+        else{
+            window.style.display="none";
+        }
+    }
+</script>
+    
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/client.js"></script>
+</body>
+</html>

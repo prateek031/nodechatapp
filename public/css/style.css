@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+   
+}
+::-webkit-scrollbar{
+    display: none;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    overflow: hidden;
+}
+header{
+    position: relative;
+    background-color: #394867;
+    color:#F1F6F9;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+img{
+    width: 2vw;
+    
+}
+.title h1 {
+    margin-left: 50px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+.container{
+    position: relative;
+    background-color:#F1F6F9;
+    padding: 20px;
+    display: flex;
+}
+.user-window{
+    width: 30vw;
+    color: white;
+    background-color: #9BA4B5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.user-head{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.users-list>p{
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+
+.chat-window{
+    width: 100%;
+    background-color:#9BA4B5;
+    border-radius: 10px;
+}
+.chats{
+    height: 65vh;
+    padding: 20px;
+    overflow-y: auto;
+}
+.user-join{
+    color: darkgrey;
+    background-color: white;
+    border-radius: 50px;
+    width: max-content;
+    padding: 7px 20px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.message{
+    color: darkgrey;
+    background-color: white;
+    padding: 5px 15px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px 50px 50px 10px ;
+}
+.message > p{
+    font-size: 2vw;
+}
+.outgoing{
+    margin-left: auto;
+    color: white;
+    background-color:#394867;
+    border-radius: 50px 10px 10px 50px;
+}
+.user-input{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    background-color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 50px 0 0 50px;
+}
+button{
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: #394867;
+    border-radius: 0px 50px 50px 0px ;
+}
+
